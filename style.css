@@ -1,0 +1,123 @@
+:root{
+    --salmon:#EF9D71;
+    --black:#000;
+    --white:#fff;
+    --cyan:#AEDEE0;
+    --dsalmon: 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+*::-moz-selection{
+    background-color:var(--salmon);
+    color:var(--white);
+}
+
+*::selection{
+    background-color:var(--salmon);
+    color:var(--white);
+}
+
+
+body[theme="black"] {
+    background-color:var(--black);
+}
+body[theme="black"] .section{
+    color:var(--white);
+}
+
+
+body[theme="cyan"]{
+    background-color:var(--cyan);
+}
+body[theme="cyan"] .section{
+    color:(--black);
+}
+body[theme="salmon"]{
+    background-color:var(--salmon);
+}
+body[theme="light"]{
+    background-color:var(--white);
+}
+
+.imagerotate{
+    -webkit-animation:anime 15s linear infinite;
+            animation:anime 15s linear infinite
+}
+
+@-webkit-keyframes anime{
+    0%{
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg)
+    }
+    100%{
+        -webkit-transform:rotate(360deg);
+                transform:rotate(360deg)
+    }
+}
+
+@keyframes anime{
+    0%{
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg)
+    }
+    100%{
+        -webkit-transform:rotate(360deg);
+                transform:rotate(360deg)
+    }
+}
+
+input::-webkit-input-placeholder{
+    color:var(--black);
+    font-family:'PP Neue Machina Plain Light';
+    border:none;
+    font-size: 1.3vw;
+}
+
+input::-moz-placeholder{
+    color:var(--black);
+    font-family:'PP Neue Machina Plain Light';
+    border:none;
+    font-size: 1.3vw;
+}
+
+input:-ms-input-placeholder{
+    color:var(--black);
+    font-family:'PP Neue Machina Plain Light';
+    border:none;
+    font-size: 1.3vw;
+}
+
+input::-ms-input-placeholder{
+    color:var(--black);
+    font-family:'PP Neue Machina Plain Light';
+    border:none;
+    font-size: 1.3vw;
+}
+
+input::placeholder{
+    color:var(--black);
+    font-family:'PP Neue Machina Plain Light';
+    border:none;
+    font-size: 1.3vw;
+}
+
+.video{
+    -webkit-clip-path:circle(var(--clip) at 50% 50%);
+            clip-path:circle(var(--clip) at 50% 50%)
+}
+
+body{
+    -webkit-transition:background-color ease-out .5s;
+    -o-transition:background-color ease-out .5s;
+    transition:background-color ease-out .5s;
+}
